@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+    /*transition: all .3s ease-out;*/
+}
+
+:root{
+    --dark-blue: #18093355;
+    --orange: rgb(76, 104, 227);
+    --black: #1b1b1b;
+    --dark-grey: #717171;
+    --light-grey: #EDEDED;
+    --white: azure;
+}
+
+body{
+    background: url('../images/photo-1495195129352-aeb325a55b65.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 18rem);
+    place-items: center;
+    padding: 1rem;
+    /*background: rgb(27, 39, 93);*/
+    gap: .5rem;
+    border-radius: .5rem;
+}
+
+.title{
+    font-family: cursive;
+    color: var(--orange);
+    font-weight: 800;
+}
+
+.note-container{
+    padding: .5rem;
+    border-radius: .4rem;
+}
+
+.note-container .btn{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+
+
+.note-box{
+    width: 18rem;
+    padding: .5rem;
+    min-height: fit-content;
+    border-radius: .5rem;
+    background: #1f375d;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+
+
+.note-box p{
+    width: 100%;
+    display: block;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.bottom-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note-box h3{
+    width: 98%;
+    color: var(--light-grey);
+}
+
+.note-box{
+    color: var(--white);
+}
+
+
+form div.incorrect input{
+    border-color: #f06272;
+}
+#error-message{
+    color:#f06272;
+}
+
+/*.note-box span{
+    margin-left: calc(100% - 61%);
+    font-weight: 500;
+    font-style: italic;
+    color: #e0dcdc;
+  }*/
+
+  
+
+.fa-trash{
+    color: #c3081d;
+    cursor: pointer;
+}
+
+.fa-pencil{
+    color: orange;
+    cursor: pointer;
+    margin-left: .5rem;
+}
+
+
+@media screen and (max-width: 755px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .note-box{
+        width: 98%;
+    }
+}
